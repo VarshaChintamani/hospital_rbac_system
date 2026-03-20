@@ -7,8 +7,6 @@ import {
   Button,
   Typography,
   Box,
-  AppBar,
-  Toolbar,
 } from "@mui/material";
 
 interface ModuleCard {
@@ -33,11 +31,11 @@ const modules: ModuleCard[] = [
 export default function Dashboard() {
   const navigate = useNavigate();
 
-  const handleLogout = () => {
-    localStorage.removeItem("token");
-    localStorage.removeItem("user");
-    navigate("/");
-  };
+  // const handleLogout = () => {
+  //   localStorage.removeItem("token");
+  //   localStorage.removeItem("user");
+  //   navigate("/");
+  // };
 
   return (
     <>
